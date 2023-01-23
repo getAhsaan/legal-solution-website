@@ -16,3 +16,13 @@
 .color-tertiary {
     color: #707070;
 }
+
+.btn-warning {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #B68C5A;
+    --bs-btn-border-color: #B68C5A;
+}
+
+.fa-chevron-right {
+    color: #707070;
+}
