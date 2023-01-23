@@ -1,0 +1,18 @@
+/* font family  */
+.font-garamond {
+    font-family: 'EB Garamond', serif;
+}
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* color  */
+.color-primary {
+    color: #B68C5A;
+}
+.color-secondary {
+    color: #414040;
+}
+.color-tertiary {
+    color: #707070;
+}
