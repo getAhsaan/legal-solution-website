@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="style.css">
     <!-- google font  -->
     <!-- poppins  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
     <!-- eb Garamond  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap" rel="stylesheet"> -->
     <!-- font awesome icons  -->
-    <script src="https://kit.fontawesome.com/e459c5b42a.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/e459c5b42a.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -36,11 +36,43 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img src="images/Group2.png" class="img-fluid" alt=""></a>
+
+                    <div class="d-lg-none d-block">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn px-2 py-2 btn-warning btn-sm font-poppins"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Free Consultation
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Modal description Modal description Modal description Modal description</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-warning">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-poppins gap-3 ">
                             <li class="nav-item">
@@ -92,9 +124,9 @@
         </section>
         <!-- hero section  -->
         <section>
-            <div class="container">
-                <div class="bg-image p-5 text-center rounded mb-5 text-white d-flex justify-content-center flex-column align-items-center"
-                    style="background-image: url('images/Rectangle4.png');">
+            <div class="container hero-section">
+                <div class="bg-image p-md-5 text-center rounded mb-5 text-white d-flex justify-content-center flex-column align-items-center"
+                    style="background-image: url('images/Rectangle4.png'); background-repeat: no-repeat;">
                     <div class="w-75 d-flex justify-content-center align-items-center flex-column py-4">
                         <div class="my-3">
                             <h1 class="display-2 fw-semibold font-garamond mb-3">We Provide Effective Legal Solutions
@@ -102,10 +134,15 @@
                             <p class=" font-poppins">There are many variations of passages of Lorem Ipsum available, but
                                 the majority have suffered alteration in some form, by injected humour.</p>
                         </div>
-                        <div class="w-100 d-flex gap-4">
-                            <input class="form-control form-control-md py-3 font-poppins" type="text"
-                                placeholder="Search your services" aria-label="form-control-lg">
-                            <button class="btn btn-warning px-5 py-3 btn-lg font-poppins fw-semibold">Search</button>
+                        <div class="w-100 d-md-flex gap-4 justify-content-center align-items-center">
+                            <div class="mb-3 w-100">
+                                <input class="form-control form-control-md py-md-3 font-poppins" type="text"
+                                    placeholder="Search your services">
+                            </div>
+                            <div class="mb-3">
+                                <button
+                                    class="btn btn-warning px-md-5 py-md-3 btn-md-lg font-poppins fw-semibold w-100">Search</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,9 +154,140 @@
         <!-- practice section  -->
         <section>
             <div class="container">
-                <div class="text-center w-75 mx-auto">
-                    <h1 class="font-garamond">The Legal Practice Area</h1>
-                <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="text-center w-75 mx-auto py-5">
+                    <h1 class="font-garamond pb-3">The Legal Practice Area</h1>
+                    <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+
+                <div class="row pb-5 align-items-center">
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="text-center d-flex flex-column justify-content-center align-items-center p-3">
+                            <img src="images/Group10.png" class="img-fluid w-25" alt="...">
+                            <div class="pt-3">
+                                <h2 class="card-title font-garamond tex pb-3">Business Law</h2>
+                                <p class="card-text font-poppins pb-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="images/Frame.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="text-center d-flex flex-column justify-content-center align-items-center p-3">
+                            <img src="images/Group10.png" class="img-fluid w-25" alt="...">
+                            <div class="pt-3">
+                                <h2 class="card-title font-garamond tex pb-3">Business Law</h2>
+                                <p class="card-text font-poppins pb-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="images/Frame.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="text-center d-flex flex-column justify-content-center align-items-center p-3">
+                            <img src="images/Group10.png" class="img-fluid w-25" alt="...">
+                            <div class="pt-3">
+                                <h2 class="card-title font-garamond tex pb-3">Business Law</h2>
+                                <p class="card-text font-poppins pb-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="images/Frame.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="text-center d-flex flex-column justify-content-center align-items-center p-3">
+                            <img src="images/Group10.png" class="img-fluid w-25" alt="...">
+                            <div class="pt-3">
+                                <h2 class="card-title font-garamond tex pb-3">Business Law</h2>
+                                <p class="card-text font-poppins pb-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="images/Frame.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="text-center d-flex flex-column justify-content-center align-items-center p-3">
+                            <img src="images/Group10.png" class="img-fluid w-25" alt="...">
+                            <div class="pt-3">
+                                <h2 class="card-title font-garamond tex pb-3">Business Law</h2>
+                                <p class="card-text font-poppins pb-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="images/Frame.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="text-center d-flex flex-column justify-content-center align-items-center p-3">
+                            <img src="images/Group10.png" class="img-fluid w-25" alt="...">
+                            <div class="pt-3">
+                                <h2 class="card-title font-garamond tex pb-3">Business Law</h2>
+                                <p class="card-text font-poppins pb-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="images/Frame.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- client section  -->
+        <section class="d-none">
+            <div class="container my-5">
+                <div class="text-center w-75 mx-auto py-5">
+                    <h1 class="font-garamond pb-3">What Our Client Say</h1>
+                    <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+                <!-- slider / carousel  -->
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="images/Rectangle4.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="images/Rectangle4.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Rectangle4.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
